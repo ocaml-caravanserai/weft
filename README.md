@@ -23,6 +23,26 @@ let () =
 **Status:** pre-release (version 0.0.0). The API can change. Linux is the main
 platform. The CI tests macOS, FreeBSD and Windows too.
 
+## Contents
+
+- [Why weft](#why-weft)
+- [When weft is not a good fit](#when-weft-is-not-a-good-fit)
+- [Features](#features)
+- [Examples](#examples)
+  - [An echo server](#an-echo-server)
+  - [A test of the same server in the simulator](#a-test-of-the-same-server-in-the-simulator)
+  - [Events: a request or a tick](#events-a-request-or-a-tick)
+  - [Two tasks at the same time](#two-tasks-at-the-same-time)
+- [Get weft](#get-weft)
+- [Requirements](#requirements)
+- [Development](#development)
+  - [Mutation tests](#mutation-tests)
+  - [The kqueue world in a FreeBSD VM](#the-kqueue-world-in-a-freebsd-vm)
+  - [The Windows world in a Windows Server VM](#the-windows-world-in-a-windows-server-vm)
+  - [Use weft from another flake](#use-weft-from-another-flake)
+- [Design](#design)
+- [License](#license)
+
 ## Why weft
 
 - **Direct style.** There are no monads and no callbacks. A read is
